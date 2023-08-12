@@ -30,17 +30,19 @@ function addData() {
 // console.log(addData());
 
 function removeAdmin() {
+  let ans = [];
      // for loop to ietrate through array
   for(let i of arr)
   {
     // check for profession in each obj
     if(i["profession"] == "admin"){
-      let index = i["id"]-1;
-      // use splice method to delete admin employee
-      arr.splice(index, 1);
+      
+  }else
+  {
+    ans.push(i);
   }
   }
-  console.log(arr);
+  console.log(ans);
   // return arr;
 }
 // console.log(removeAdmin());
@@ -48,7 +50,7 @@ function removeAdmin() {
 
 function concatenateArray() {
   let employee = [
-    { id: 5, name: 'jack', age: 18, profession: 'intern'},
+    { id: 5, name: 'jacky', age: 18, profession: 'intern'},
     { id: 6, name: 'jonny', age: 34, profession: 'finance'},
     { id: 7, name: 'jasmin', age: 28, profession: 'hr'},
     { id: 8, name: 'jenny', age: 38, profession: 'manager'}
